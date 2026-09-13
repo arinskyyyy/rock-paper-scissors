@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Javascript practice</title>
-        <script src="./javascript.js"></script>
+        <link href="./styles.css" rel="stylesheet" type="text/css" />
+        <script src="./script.js" defer></script>
     </head>
     <body>
-        
+        <div class="image-container">
+            <div class="content-wrapper">
+                <img id="myImage" src="./assets/pixelpond.gif" alt="Landscape scene">
+                <div class="translucent-box">
+                    <h1>Rock, Paper and Scissors</h1>
+                    <p></p>
+                    <button id="rock"></button>
+                    <button id="paper"></button>
+                    <button id="scissors"></button>
+                    <button id="quit"></button>
+                    <p id="scores"></p>
+                    <p class="hidden"></p>
+                </div>
+            </div>
+        </div>
+        <audio id="rainAudio" loop>
+            <source src="./assets/rainsound.mp3" type="audio/mpeg">
+        </audio>
     </body>
 </html>
